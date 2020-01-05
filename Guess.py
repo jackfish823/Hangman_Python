@@ -1,4 +1,3 @@
-
 word_input = input("Enter word: ")
 word_len = int(len(word_input))
 
