@@ -1,12 +1,13 @@
 import random
 
-print("""  _    _                                         
+HANGMAN_ASCII_ART = """  _    _                                         
  | |  | |                                        
  | |__| | __ _ _ __   __ _ _ __ ___   __ _ _ __  
  |  __  |/ _` | '_ \ / _` | '_ ` _ \ / _` | '_ \ 
  | |  | | (_| | | | | (_| | | | | | | (_| | | | |
  |_|  |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
                       __/ |                      
-                     |___/""")
+                     |___/\n"""
+MAX_TIRES = 6
 
-print(random.randint(5, 10))  # prints random number between 5 and 10
+print(HANGMAN_ASCII_ART, MAX_TIRES)  # prints the header and max tires
