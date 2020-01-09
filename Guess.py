@@ -5,10 +5,12 @@ word_len = int(len(word_input))
 
 print("_ " * word_len)  #print the _ _ _ _
 
-guess_input = input("\nGuess a letter: ")
-spread_guess = re.findall('[A-Za-z]', guess_input)  #list of the guess_input of only english
+guess_input = input("\nGuess a letter: ")  #to guess the letter
+
 
 #          -validation check-            #
+spread_guess = re.findall('[A-Za-z]', guess_input)  #list of the guess_input of only english
+
 if len(guess_input) == len(spread_guess):
     if len(guess_input) == 1:
         print(guess_input.lower())
